@@ -239,4 +239,5 @@ document.onkeydown = (e) => {
   )
     return false;
 };
+console.log("I Want Know Why You Want Open DevTools?");
 // ############################################################
