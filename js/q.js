@@ -1,6 +1,6 @@
 let qOne = (document.getElementsByClassName("container")[0].innerHTML = `
   <div class="question" id="question1">
-    <p>1+2=</p>
+    <p>=1+2</p>
     <div class="answers">
       <div class="box O" id="O">
         <input type="radio" class="check" id="oneO" name="answer" onclick="qOAnsOne()" />
@@ -23,7 +23,7 @@ let qOne = (document.getElementsByClassName("container")[0].innerHTML = `
   </div>`);
 let qTwo = (document.getElementsByClassName("container")[0].innerHTML = `
   <div class="question" id="question2">
-    <p>15+17=</p>
+    <p>=15+17</p>
     <div class="answers">
       <div class="box T" id="T">
         <input type="radio" id="oneT" class="check" name="answer" onclick="qTAnsOne()" />
@@ -46,7 +46,7 @@ let qTwo = (document.getElementsByClassName("container")[0].innerHTML = `
   </div>`);
 let qThree = (document.getElementsByClassName("container")[0].innerHTML = `
   <div class="question" id="question3">
-    <p>99-100=</p>
+    <p>=99-100</p>
     <div class="answers">
       <div class="box Th" id="Th">
         <input type="radio" id="oneTh" class="check" name="answer" onclick="qThAnsOne()" />
@@ -69,7 +69,7 @@ let qThree = (document.getElementsByClassName("container")[0].innerHTML = `
   </div>`);
 let q4 = (document.getElementsByClassName("container")[0].innerHTML = `
   <div class="question" id="question4">
-    <p>3<sup>2</sup>=</p>
+    <p>=3<sup>2</sup></p>
     <div class="answers">
       <div class="box Fo" id="Fo">
         <input type="radio" id="oneFo" name="answer" onclick="q4AnsOne()" />
@@ -92,30 +92,30 @@ let q4 = (document.getElementsByClassName("container")[0].innerHTML = `
   </div>`);
 let q5 = (document.getElementsByClassName("container")[0].innerHTML = `
   <div class="question" id="question5">
-    <p>2*3<sup>3</sup>=</p>
+    <p>=|-15|</p>
     <div class="answers">
       <div class="box An5" id="An5">
         <input type="radio" id="oneAn5" name="answer" onclick="q5AnsOne()" />
-        <label for="oneAn5">31</label>
+        <label for="oneAn5">-15</label>
       </div>
       <div class="box An5" id="An5">
         <input type="radio" id="twoAn5" name="answer" onclick="q5AnsTwo()" />
-        <label for="twoAn5">32</label>
+        <label for="twoAn5">0</label>
       </div>
       <div class="box An5" id="An5">
         <input type="radio" id="threeAn5" name="answer" onclick="q5AnsThree()" />
-        <label for="threeAn5">33</label>
+        <label for="threeAn5">15</label>
       </div>
       <div class="box An5" id="An5">
         <input type="radio" id="fourAn5" name="answer" onclick="q5AnsFour()" />
-        <label for="fourAn5">43</label>
+        <label for="fourAn5">No Thing</label>
       </div>
       <span id="BlockQOne" class="BlockQ"></span>
     </div>
   </div>`);
 let q6 = (document.getElementsByClassName("container")[0].innerHTML = `
   <div class="question" id="question6">
-    <p>-15*-2=</p>
+    <p>=(-15)*(-2)</p>
     <div class="answers">
       <div class="box An6" id="An6">
         <input type="radio" id="oneAn6" name="answer" onclick="q6AnsOne()" />
