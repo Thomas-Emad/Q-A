@@ -150,8 +150,7 @@ function reGame() {
 const printScour = document.getElementById("scour");
 
 /* Question 1 */
-if (document.getElementById("oneO") === null) {
-} else {
+if (document.getElementById("oneO") !== null) {
   // if Any SomeOne Try  Click in here => Do this.
   document.getElementById("oneO").onclick = left;
   function qOAnsTwo() {
@@ -162,10 +161,8 @@ if (document.getElementById("oneO") === null) {
   document.getElementById("threeO").onclick = left;
   document.getElementById("fourO").onclick = left;
 }
-
 /* Question 2 */
-if (document.getElementById("oneT") === null) {
-} else {
+if (document.getElementById("oneT") !== null) {
   // if Any SomeOne Try  Click in here => Do this.
   document.getElementById("oneT").onclick = left;
   function qTAnsTwo() {
@@ -176,10 +173,8 @@ if (document.getElementById("oneT") === null) {
   document.getElementById("threeT").onclick = left;
   document.getElementById("fourT").onclick = left;
 }
-
 /* Question 3 */
-if (document.getElementById("oneTh") === null) {
-} else {
+if (document.getElementById("oneTh") !== null) {
   // if Any SomeOne Try  Click in here => Do this.
   document.getElementById("oneTh").onclick = left;
   function qThAnsTwo() {
@@ -190,10 +185,8 @@ if (document.getElementById("oneTh") === null) {
   document.getElementById("threeTh").onclick = left;
   document.getElementById("fourTh").onclick = left;
 }
-
 /* Question 4 */
-if (document.getElementById("oneFo") === null) {
-} else {
+if (document.getElementById("oneFo") !== null) {
   // if Any SomeOne Try  Click in here => Do this.
   document.getElementById("oneFo").onclick = left;
   function q4AnsTwo() {
@@ -204,10 +197,8 @@ if (document.getElementById("oneFo") === null) {
   document.getElementById("threeFo").onclick = left;
   document.getElementById("fourFo").onclick = left;
 }
-
 /* Question 5 */
-if (document.getElementById("oneAn5") === null) {
-} else {
+if (document.getElementById("oneAn5") !== null) {
   document.getElementById("oneAn5").onclick = left;
   document.getElementById("twoAn5").onclick = left;
   function q5AnsThree() {
@@ -217,13 +208,11 @@ if (document.getElementById("oneAn5") === null) {
   }
   document.getElementById("fourAn5").onclick = left;
 }
-
 /* Question 6 */
-if (document.getElementById("oneAn6") === null) {
-  // if this empty (NoThink).
-} else {
+if (document.getElementById("oneAn6") !== null) {
+  // if this empty (NoThing).
   document.getElementById("oneAn6").onclick = left;
-  // if this ok Answer => Do this.
+  // if this Good Answer => Do this.
   function q6AnsTwo() {
     num++;
     printScour.innerHTML = num;
@@ -233,13 +222,21 @@ if (document.getElementById("oneAn6") === null) {
   document.getElementById("fourAn6").onclick = left;
 }
 
-let numberTime = 60;
-
-setTimeout(function () {
-  numberTime--;
-  for (i = numberTime; i <= numberTime; i--) {
-    numberTime--;
-    console.log(i);
-    console.log(numberTime);
-  }
-}, 1000);
+// ############################################################
+// I Wnat You Don't Open The DevTools In The Site, How I Can Do This ? That's Answer:-
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+function ctrlShiftKey(e, keyCode) {
+  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
+document.onkeydown = (e) => {
+  // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+  if (
+    event.keyCode === 123 ||
+    ctrlShiftKey(e, "I") ||
+    ctrlShiftKey(e, "J") ||
+    ctrlShiftKey(e, "C") ||
+    (e.ctrlKey && e.keyCode === "U".charCodeAt(0))
+  )
+    return false;
+};
+// ############################################################
