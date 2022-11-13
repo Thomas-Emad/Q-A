@@ -58,15 +58,6 @@ body {
   z-index: 100000000;
   top: 10px;
 }
-/* .question {
-  position: relative;
-  background-color: var(--bg-main);
-  padding: 10px;
-  border-radius: 5px;
-  border: solid 1px #ddd;
-  margin-bottom: 20px;
-} */
-
 .question {
   position: absolute;
   background-color: rgba(255 255 255 / 15%);
@@ -79,8 +70,8 @@ body {
   width: 90%;
   transition: 0.4s left, 0.5s visibility;
   box-shadow: 0 0 5px 0 #eee;
+  text-align: left;
 }
-
 .question::after {
   position: absolute;
   top: 0;
